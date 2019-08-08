@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Which political party do you align closely with?</title>
+  </head>
+  <body>
+
+  	<section class="header">
+  		<div class="container">
+  			<h1>Choosing a political party can be pretty daunting.</h1>
+  			<h5>But there's hope! Using the survey below, we can help you identify which party you align with more closely, and tell you a bit more about what you can expect.</h5>
+  			<img src="images/ballot1.png" alt="Ballot Image" width="500">
+  		</div>
+  	</section>
+
+  	<section class="questionaire">
+  		<div class="container">
+  			<form id="questions">
+  				<div class="form-row">
+  					<div class="form-group col-md-4">
+        				<label for="name">First Name</label>
+        				<input id="name" type="text">
+        			</div>
+        			<div class="form-group col-md-4">
+        				<label for="gender">Gender</label>
+        				<select id="gender">
+          					<option value="female">Female</option>
+          					<option value="male">Male</option>
+        				</select>
+        			</div>
+        			<div class="form-group col-md-4">
+        				<label for="age">Age</label>
+        				<input id="age" type="text">
+        			</div>
+        		</div>
+        		<div class="form-row">
+        			<div class="form-group col-md-12">
+        				<label for="register">Are you registered to vote at your current location?</label>
+        				<br>
+        				<select id="register">
+        					<option value="yes">Yes</option>
+          					<option value="no">No</option>
+          				</select>
+          			</div>
+          		</div>
+        		<div class="form-row">
+        			<div class="form-group col-md-12">
+        				<label for="future">How likely are you to vote in the upcoming election?</label>
+        				<br>
+        				<select id="future">
+        					<option value="certain">Certain to vote</option>
+          					<option value="likely">Will likely vote</option>
+          					<option value="may">Possibly will vote</option>
+          					<option value="skip">Skipping this election</option>
+          					<option value="none">I'm not registered to vote</option>
+          				</select>
+        			</div>
+        		</div>
+        		<div class="form-row">
+        			<div class="form-group col-md-12">
+        				<label for="previous">Please state, whom did you vote for in the last election?</label>
+        				<br>
+        				<select id="previous">
+        					<option value="trump">Donald Trump</option>
+          					<option value="clinton">Hillary Clinton</option>
+          					<option value="johnson">Gary Johnson</option>
+          				</select>
+        			</div>
+        		</div>
+        		<div class="form-row">
+        			<div class="form-group col-md-12">
+        				<h5>Please state your level of agreement with the statements below...</h5>
+        				<label for="ethnicities">Which comes closer to your view about how to handle undocumented immigrants who are now living in the U.S.?</label>
+        				<br>
+        				<select id="ethnicities">
+        					<option value="allow">Should be allowed to stay here legally</option>
+          					<option value="disallow">Should not be allowed to stay here legally</option>
+          				</select>
+        			</div>
+        		</div>
+        		<div class="form-row">
+        			<div class="form-group col-md-12">
+        				<label for="marriage">Do you strongly favor, favor, oppose, or strongly oppose allowing gays and lesbians to marry legally?</label>
+        				<br>
+        				<select id="marriage">
+        					<option value="sf">Strongly favor</option>
+          					<option value="fa">Favor</option>
+          					<option value="op">Oppose</option>
+          					<option value="sop">Strongly oppose</option>
+          				</select>
+        			</div>
+        		</div>
+        		<div class="form-row">
+        			<div class="form-group col-md-12">
+        				<label for="power">Which statement comes closer to your own views – even if neither is exactly right?</label>
+        				<br>
+        				<select id="power">
+        					<option value="less">Government is doing too many things that would be better left to businesses and individuals</option>
+          					<option value="more">Government should do more to solve problems</option>
+          				</select>
+        			</div>
+        		</div>
+        		<div class="form-row">
+        			<div class="form-group col-md-12">
+        				<label for="healthcare">Do you think it is the responsibility of the federal government to make sure all Americans have health care coverage?</label>
+        				<br>
+        				<select id="healthcare">
+        					<option value="yes">Yes</option>
+          					<option value="no">No</option>
+          				</select>
+        			</div>
+        		</div>
+        		<button type="submit" class="btn btn-primary">Send my survey</button>
+        	</form>
+        </div>
+
+        <div id="confirmation">
+        	<div class="container">
+  			  	<h4>Which poitical party do I align with?: </h4>
+  			  	<br>
+          		<h2><span id="result" style="font-size: 32px;"></span></h2>
+        	</div>
+  		</div>
+    </section>
+</body>
+</html>
